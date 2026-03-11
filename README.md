@@ -3,13 +3,13 @@
 Use a **Surface Pro 6 running Arch Linux** as a wireless or wired external drawing tablet (screen off) connected to a second PC, via evdev event forwarding over the network.
 
 ```
-┌─────────────────────┐         TCP/UDP           ┌───────────────────────────────────────────┐
-│   Surface Pro 6     │  ───────────────────────▶ │     Host PC                               │
-│   (sender)          │   WiFi or direct Ethernet │   (receiver)                              │
-│                     │                           │                                           │
-│  pen events ──▶ Python script                   │  Python script ──▶ virtual uinput device  │
-│  screen off         │                           │  GNOME sees it as Wacom tablet            │
-└─────────────────────┘                           └───────────────────────────────────────────┘
+┌────────────────────────────────┐         TCP/UDP          ┌───────────────────────────────────────────┐
+│   Surface Pro 6                │ ───────────────────────▶ │     Host PC                               │
+│   (sender)                     │  WiFi or direct Ethernet │   (receiver)                              │
+│                                │                          │                                           │
+│  pen events ──▶ Python script  │                          │  Python script ──▶ virtual uinput device  │
+│  screen off                    │                          │  GNOME sees it as Wacom tablet            │
+└────────────────────────────────┘                          └───────────────────────────────────────────┘
 ```
 
 ---
