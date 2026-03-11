@@ -222,7 +222,7 @@ In order of impact:
 
 ## 10. Windows host
 
-The receiver **does not work on Windows** — `evdev` and `uinput` are Linux-only. The closest Windows alternative is [OpenTabletDriver](https://github.com/OpenTabletDriver/OpenTabletDriver), which has a network plugin and may handle the receiver side. A full Windows receiver would require rewriting it using a virtual HID driver such as ViGEm or vmultidriver.
+The receiver **does not work on Windows** — `evdev` and `uinput` are Linux-only.
 
 ---
 
